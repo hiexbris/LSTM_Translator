@@ -43,7 +43,7 @@ def plot_attention(tokens_x, tokens_y, attention_list):
     plt.show()
 
 
-def train_model(num_epochs=30, learning_rate=0.001):
+def train_model(num_epochs=20, learning_rate=0.001):
 
     global emb_dim, projected_emb_dim, enc_hidden_dim, dec_hidden_dim, output_dim, attention_size
 
@@ -107,7 +107,7 @@ def train_model(num_epochs=30, learning_rate=0.001):
     from torch.cuda.amp import GradScaler, autocast
     scaler = GradScaler()
 
-    for epoch in range(19, num_epochs):
+    for epoch in range(num_epochs):
         model.train()
         total_loss = 0
         print(f"\nEpoch {epoch+1}/{num_epochs}")

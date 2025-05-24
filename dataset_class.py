@@ -122,7 +122,7 @@ class TranslationDataset:
             max_len_X = max(len(sent) for sent in batch_X)
             max_len_Y = max(len(sent) for sent in batch_Y)
 
-            if 15 < max_len_X <= 50:
+            if max_len_X <= 50:
                 padded_batch_X = [self.pad_sentence(sent, max_len_X, pad_token) for sent in batch_X]
                 padded_batch_Y = [self.pad_sentence(sent, max_len_Y, pad_token) for sent in batch_Y]
 
