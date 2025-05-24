@@ -48,6 +48,7 @@ LSTM_Machine_Translation/
 We use:
 - `cc.fr.300.vec.gz` for French word vectors
 - `cc.en.300.vec.gz` for English word vectors
+- Due to big sizes couldn't be added here.
 
 ---
 
@@ -78,6 +79,8 @@ A simple Pygame-based GUI to type a French sentence and see the English translat
 
 ---
 
-##  Note
+Notes
 
 This uses Python 3.11 as the newer versions aren't compatible with CUDA Torch needed for GPU usage while training
+Checkpoints file saves the models every 5 epoches and the best model yet
+For training, The model requires two embeddings French (cc.fr.300.vec.gz) and English (cc.en.300.vec.gz). These are fasttext embeddings any other pretrained can be used as well
