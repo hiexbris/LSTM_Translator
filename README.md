@@ -86,4 +86,3 @@ Checkpoints file saves the models every 5 epoches and the best model yet
 For training, The model requires two embeddings French (cc.fr.300.vec.gz) and English (cc.en.300.vec.gz). These are fasttext embeddings any other pretrained can be used as well
 - French: https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.fr.300.vec.gz
 - English: https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.en.300.vec.gz
-- Trained model (15 epoch): https://drive.google.com/file/d/1K6IAP3qXno9vkQLeRv5RmitQZlP33Cuc/view?usp=drive_link
